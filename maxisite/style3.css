@@ -1,0 +1,266 @@
+
+.container {
+  width: 1349px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  
+}
+
+
+.cont-head {
+      margin-left: 100px;
+      margin-right: 100px;
+}
+
+.logo {
+  margin: 20px 0 0 50px;
+  float: left;
+}
+
+
+
+li {
+  list-style-type: none;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  background-color: #2c2b30;
+}
+
+.header {
+ height: 65px;
+ width: auto;
+ background-color: #201f27;
+ padding: 0;
+ margin: 0;
+
+  
+  
+
+
+}
+.nav{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 150px;
+  font:bold 12pt/16pt "Open Sans", sans-serif;
+  
+  padding: 20px 100px 0 0;
+  text-transform: uppercase;
+}
+
+ul.nav{
+                padding: 0;
+                float: right;
+                padding: 0;
+                list-style: none;
+
+            }
+.nav li {
+                display: inline;
+            }
+ul.nav a {
+                display: inline-block;
+                padding:10px;
+                text-decoration: none;
+                color: #c7c7c7;
+                text-align: center;
+
+            }
+ul.nav a:hover{
+                color: #ffffff;
+                
+            }
+
+
+#li3 {
+  color: #fff;
+  border-bottom: 4px solid #fff;
+                padding-bottom: 15px;
+}
+
+.home {
+ background-image: url(images/5.jpg);
+ background-repeat: no-repeat;
+ display: inline-block;
+ width: 1349px;
+ margin-right: auto;
+ margin-left: auto;
+ height: 1080px;
+ position: absolute;
+
+}
+
+.rborder {
+  border: 1px solid #4d4c51;
+  background-color: #4d4c51;
+  display: inline-block;
+  position: absolute;
+  width: 465px;
+  height: 1080px;
+  margin: 0 0 0 882px;
+  opacity: 0.15;
+  text-align: center;
+
+
+}
+
+.rbnav h1 {
+  
+  text-transform: uppercase;
+  font: bold 30px/30px "Open Sans", sans-serif;
+  color: #de3f3f;
+  float: right;
+  margin: 25px 100px 0 0;
+  text-align: center;
+
+}
+
+
+.brkrug{
+  
+  
+  margin: 150px 0 0 1000px;
+  
+}
+
+
+.brkrug1 {
+  border: 5px solid #2c2b2d;
+  background-color: #2c2b2d;
+  display: inline-block;
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 160px;
+  background-image: url(images/krug1.png);
+  text-align: center;
+
+  
+
+}
+
+.brkrug2 {
+  border: 5px solid #2c2b2d;
+  background-color: #2c2b2d;
+  display: inline-block;
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 160px;
+  background-image: url(images/krug2.png);
+  text-align: center;
+  margin: 300px 0 0 0;
+
+
+}
+
+.brkrug3 {
+  border: 5px solid #2c2b2d;
+  background-color: #2c2b2d;
+  display: inline-block;
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 160px;
+  background-image: url(images/krug3.png);
+  text-align: center;
+  margin: 600px 0 0 0;
+
+}
+
+.brkrug1:hover {
+  border: 5px solid #004a80;
+  background-color: #004a80;
+  transition: all 0.1s linear;
+}
+.brkrug2:hover {
+  border: 5px solid #004a80;
+  background-color: #004a80;
+}
+.brkrug3:hover {
+  border: 5px solid #004a80;
+  background-color: #004a80;
+}
+
+.krugnav {
+  
+  color: #fff;
+}
+
+.krugnav h3 {
+  border: 3px solid #333;
+  background-color: #333;
+  display: inline;
+  position: static;
+}
+
+#opisanie {
+  display: inline-block;
+  position: absolute;
+  text-align: left;
+  font: bold 16pt/20pt "Open Sans", sans-serif;
+  margin-top: 100px;
+  margin-left: 70px;
+}
+
+#zag {
+  display: inline-block;
+  position: absolute;
+  text-transform: uppercase;
+  color: #de3f3f;
+  font: bold 24px/30px "Open Sans", sans-serif;
+  margin-left: 70px;
+  margin-top: 40px;
+
+
+}
+
+.video {
+  position: absolute;
+  display: inline;
+  padding: 0;
+  
+
+}
+.videos {
+  margin-top: 500px;
+  margin-left: 70px;
+  display: inline;
+  width: 600px;
+  height: 300px;
+  padding: 0;
+}
+
+
+#linkv {
+  position: absolute;
+  display: inline;
+  font: bold 30px/30px "Open Sans", sans-serif;
+  color: #000;
+  margin-left: 90px;
+}
+
+
+#linka {
+    display: inline;
+    position: absolute;
+    padding:10px;
+    text-decoration: none;
+    color: #c7c7c7;
+    text-align: left;
+    font: bold 18px/30px "Open Sans", sans-serif;
+}
+
+
+
+
