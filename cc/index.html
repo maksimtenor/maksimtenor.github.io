@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>JS</title>
+</head>
+<body>
+    <div id="container">
+    <div id="forma">
+    <h1>Currency Converter</h1>
+
+    
+        <div id="line-input">
+
+
+                <select id="Dest" class="Validate_Required "
+     name="Dest" aria-required="true"
+     onChange="Selected(this)"
+      onSubmit="Selected(this)">
+        <option value="0" selected="selected">Choose(Валюта)</option>
+        <option value="1">USD</option>
+        <option value="2">EUR</option>
+        <option value="3">UAH</option>
+        <option value="4">RUB</option>
+     </select>
+
+        <input type="number"
+        id="inputusd"
+        placeholder="Input">
+
+
+        </div>
+         
+    
+    <p>USD: <span id="outputusd"></span></p>
+    <p>EUR: <span id="outputeur"></span></p>
+    <p>UAH: <span id="outputuah"></span></p>
+    <p>RUB: <span id="outputrub"></span></p>
+    </div>
+</div>
+     
+   <script src="script.js"></script>
+</body>
+</html>
