@@ -42,7 +42,7 @@ body {
 
 body {
 	background: #0F1215;
-	font: 16px/30px "merriweather-regular", serif;
+	font: 16px/30px "Open Sans", sans-serif;
 	font-weight: normal;
 	color: #575859;
 }
@@ -73,7 +73,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "raleway-heavy", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	color: #FFFFFF;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -136,18 +136,18 @@ p img {
 }
 
 p.lead {
-	font: 20px/36px "merriweather-light", serif;
+	font: 20px/36px"Open Sans", sans-serif;
 	color: #707273;
 }
 
 em {
-	font: 16px/30px "merriweather-italic", serif;
+	font: 16px/30px "Open Sans", sans-serif;
 	font-style: normal;
 }
 
 strong,
 b {
-	font: 16px/30px "merriweather-bold", serif;
+	font: 16px/30px "Open Sans", sans-serif;
 	font-weight: normal;
 }
 
@@ -200,7 +200,7 @@ blockquote cite a:visited {
 }
 
 abbr {
-	font-family: "merriweather-bold", serif;
+	font-family: "Open Sans", sans-serif;
 	font-variant: small-caps;
 	text-transform: lowercase;
 	letter-spacing: .5px;
@@ -209,7 +209,7 @@ abbr {
 
 pre,
 code {
-	font-family: Consolas, "Andale Mono", Courier, "Courier New", monospace;
+	font-family: "Open Sans", sans-serif;
 }
 
 pre {
@@ -444,7 +444,7 @@ select {
 	outline: none;
 	vertical-align: middle;
 	color: #a3a4a6;
-	font-family: "raleway-bold", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 15px;
 	line-height: 24px;
 	border-radius: 3px;
@@ -477,7 +477,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
 	display: inline-block;
-	font: 16px/30px "raleway-heavy", sans-serif;
+	font: 16px/30px "Open Sans", sans-serif;
 	padding: 9px 16px;
 	margin: 0 3px 6px 0;
 	background: #fdc501;
@@ -508,7 +508,7 @@ input[type="button"]:hover {
 
 label,
 legend {
-	font: 15px/30px "raleway-bold", sans-serif;
+	font: 15px/30px "Open Sans", sans-serif;
 	margin: 12px 0;
 	color: #252525;
 	display: block;
@@ -517,7 +517,7 @@ legend {
 label span,
 legend span {
 	color: #575859;
-	font: 16px/30px "raleway-bold", sans-serif;
+	font: 16px/30px "Open Sans", sans-serif;
 }
 
 input[type="checkbox"],
@@ -561,7 +561,7 @@ hr {
 
 /* sections */
 .section-head h1 {
-	font: 15px/30px "raleway-heavy", sans-serif;
+	font: 15px/30px "Open Sans", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2.5px;
 	color: #FFFFFF;
@@ -576,7 +576,7 @@ hr {
 }
 
 .section-head p {
-	font: 20px/36px "merriweather-light", serif;
+	font: 18px/36px "Open Sans", sans-serif;
 	width: 95%;
 }
 
@@ -592,7 +592,7 @@ hr {
 	}
 
 	.section-head p {
-		font: 18px/36px "merriweather-light", serif;
+		font: 18px/36px "Open Sans", sans-serif;
 		width: auto;
 	}
 
@@ -605,7 +605,7 @@ hr {
 
 @media only screen and (max-width:600px) {
 	.section-head p {
-		font: 17px/33px "merriweather-light", serif;
+		font: 17px/33px "Open Sans", sans-serif;
 		width: auto;
 	}
 
@@ -735,7 +735,7 @@ header .header-social li a:hover {
 
 /* nav-wrap */
 #nav-wrap {
-	font: 13px "raleway-heavy", sans-serif;
+	font: 13px "Open Sans", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
 	float: left;  
@@ -994,7 +994,7 @@ ul#nav li.current a:after {
 }
 
 #hero-slider .slides .flex-caption h1 {
-	font: 49px/1.3 "raleway-bold", sans-serif;
+	font: 49px/1.3 "Open Sans", sans-serif;
 	letter-spacing: -1px;
 	padding-bottom: 24px;
 	color: white;
@@ -1020,7 +1020,7 @@ ul#nav li.current a:after {
 }
 
 #hero-slider .slides .flex-caption h3 {
-	font: 18px/1.9 "merriweather-light", sans-serif;
+	font: 18px/1.9 "Open Sans", sans-serif;
 	color: rgba(255, 255, 255, 0.7);
 	text-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
 	width: 85%;
@@ -1059,7 +1059,7 @@ ul#nav li.current a:after {
 
 @media only screen and (max-width:1200px) {
 	#hero-slider .slides .flex-caption h1 {
-		font: 44px/1.3 "raleway-bold", sans-serif;
+		font: 44px/1.3 "Open Sans", sans-serif;
 	}
 
 }
@@ -1081,7 +1081,7 @@ ul#nav li.current a:after {
 	}
 
 	#hero-slider .slides .flex-caption h1 {
-		font: 43px/1.3 "raleway-bold", sans-serif;
+		font: 43px/1.3 "Open Sans", sans-serif;
 	}
 
 	#hero-slider .slides .flex-caption h1::after {
@@ -1090,7 +1090,7 @@ ul#nav li.current a:after {
 	}
 
 	#hero-slider .slides .flex-caption h3 {
-		font: 16px/1.9 "merriweather-light", sans-serif;
+		font: 16px/1.9 "Open Sans", sans-serif;
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
@@ -1117,11 +1117,11 @@ ul#nav li.current a:after {
 	}
 
 	#hero-slider .slides .flex-caption h1 {
-		font: 41px/1.3 "raleway-bold", sans-serif;
+		font: 41px/1.3 "Open Sans", sans-serif;
 	}
 
 	#hero-slider .slides .flex-caption h3 {
-		font: 16px/1.9 "merriweather-light", sans-serif;
+		font: 16px/1.9 "Open Sans", sans-serif;
 		width: 85%;
 	}
 
@@ -1142,11 +1142,11 @@ ul#nav li.current a:after {
 	}
 
 	#hero-slider .slides .flex-caption h1 {
-		font: 39px/1.3 "raleway-bold", sans-serif;
+		font: 39px/1.3 "Open Sans", sans-serif;
 	}
 
 	#hero-slider .slides .flex-caption h3 {
-		font: 15px/1.9 "merriweather-light", sans-serif;
+		font: 15px/1.9 "Open Sans", sans-serif;
 		width: 90%;
 	}
 
@@ -1167,7 +1167,7 @@ ul#nav li.current a:after {
 	}
 
 	#hero-slider .slides .flex-caption h1 {
-		font: 36px/1.3 "raleway-bold", sans-serif;
+		font: 36px/1.3 "Open Sans", sans-serif;
 	}
 
 	#hero-slider .slides .flex-caption h3 {
@@ -1190,7 +1190,7 @@ ul#nav li.current a:after {
 	}
 
 	#hero-slider .slides .flex-caption h1 {
-		font: 30px/1.3 "raleway-bold", sans-serif;
+		font: 30px/1.3 "Open Sans", sans-serif;
 	}
 
 }
@@ -1249,7 +1249,7 @@ ul#nav li.current a:after {
 }
 
 #hero #more a {
-	font: 12px/54px "raleway-heavy", sans-serif;
+	font: 12px/54px "Open Sans", sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -1418,14 +1418,14 @@ ul#nav li.current a:after {
 }
 
 .folio-item .portfolio-item-meta h5 {
-	font: 14px/21px "raleway-bold", sans-serif;
+	font: 14px/21px "Open Sans", sans-serif;
 	letter-spacing: 2px;
 	color: white;
 	margin: 0;
 }
 
 .folio-item .portfolio-item-meta p {
-	font: 14px/18px "raleway-semibold", sans-serif;
+	font: 14px/18px "Open Sans", sans-serif;
 	color: #8A8A8A;
 	margin: 0;
 }
@@ -1460,12 +1460,12 @@ ul#nav li.current a:after {
 	}
 
 	.folio-item .portfolio-item-meta h5 {
-		font: 13px/21px "raleway-bold", sans-serif;
+		font: 13px/21px "Open Sans", sans-serif;
 		letter-spacing: 1px;
 	}
 
 	.folio-item .portfolio-item-meta p {
-		font: 13px/18px "raleway-semibold", sans-serif;
+		font: 13px/18px "Open Sans", sans-serif;
 	}
 
 }
@@ -1476,12 +1476,12 @@ ul#nav li.current a:after {
 	}
 
 	.folio-item .portfolio-item-meta h5 {
-		font: 11px/18px "raleway-bold", sans-serif;
+		font: 11px/18px "Open Sans", sans-serif;
 		letter-spacing: 1px;
 	}
 
 	.folio-item .portfolio-item-meta p {
-		font: 11px/16px "raleway-semibold", sans-serif;
+		font: 11px/16px "Open Sans", sans-serif;
 	}
 
 }
@@ -1509,19 +1509,19 @@ ul#nav li.current a:after {
 }
 
 .popup-modal .description-box h4 {
-	font: 15px/24px "raleway-heavy", sans-serif;
+	font: 15px/24px "Open Sans", sans-serif;
 	color: #000000;
 }
 
 .popup-modal .description-box p {
-	font: 14px/24px "merriweather-regular", serif;
+	font: 14px/24px "Open Sans", sans-serif;
 	color: #A1A1A1;
 	margin-bottom: 12px;
 }
 
 /* categories */
 .popup-modal .categories {
-	font: 11px/18px "raleway-heavy", sans-serif;
+	font: 11px/18px "Open Sans", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	display: block;
@@ -1537,7 +1537,7 @@ ul#nav li.current a:after {
 }
 
 .popup-modal .link-box a {
-	font: 12px/60px "raleway-heavy", sans-serif;
+	font: 12px/60px "Open Sans", sans-serif;
 	color: #FFFFFF;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -1689,7 +1689,7 @@ ul#nav li.current a:after {
 }
 
 #services .service-list h3 {
-	font: 18px/36px "raleway-heavy", sans-serif;
+	font: 18px/36px "Open Sans", sans-serif;
 	color: #fdc501;
 	padding: 0;
 	text-transform: none;
@@ -1920,7 +1920,7 @@ ul#nav li.current a:after {
 }
 
 #call-to-action p {
-	font: 20px/36px "merriweather-light", serif;
+	font: 20px/36px "Open Sans", sans-serif;
 	color: #707273;
 	width: 75%;
 }
@@ -1931,7 +1931,7 @@ ul#nav li.current a:after {
 }
 
 #call-to-action h2 {
-	font: 30px/36px "raleway-bold", sans-serif;
+	font: 30px/36px "Open Sans", sans-serif;
 	color: #FFFFFF;
 	letter-spacing: -0.5px;
 	margin-bottom: 24px;
@@ -1951,7 +1951,7 @@ ul#nav li.current a:after {
 }
 
 #call-to-action .action a {
-	font: 15px/60px "raleway-heavy", sans-serif;
+	font: 15px/60px "Open Sans", sans-serif;
 	color: #FFFFFF;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -1984,11 +1984,11 @@ ul#nav li.current a:after {
 	}
 
 	#call-to-action h2 {
-		font: 28px/36px "raleway-bold", sans-serif;
+		font: 28px/36px "Open Sans", sans-serif;
 	}
 
 	#call-to-action p {
-		font: 18px/33px "merriweather-light", serif;
+		font: 18px/33px "Open Sans", sans-serif;
 		width: 80%;
 	}
 
@@ -2001,11 +2001,11 @@ ul#nav li.current a:after {
 	}
 
 	#call-to-action h2 {
-		font: 26px/36px "raleway-bold", sans-serif;
+		font: 26px/36px "Open Sans", sans-serif;
 	}
 
 	#call-to-action p {
-		font: 16px/30px "merriweather-light", serif;
+		font: 16px/30px "Open Sans", sans-serif;
 	}
 
 }
@@ -2039,7 +2039,7 @@ ul#nav li.current a:after {
 }
 
 #testimonial-slider p {
-	font: 27px/1.9 "merriweather-regular", sans-serif;
+	font: 27px/1.9 "Open Sans", sans-serif;
 	color: #FFFFFF;
 	padding: 0;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
@@ -2047,7 +2047,7 @@ ul#nav li.current a:after {
 
 #testimonial-slider .testimonial-author {
 	display: block;
-	font: 16px/24px "raleway-heavy", sans-serif;
+	font: 16px/24px "Open Sans", sans-serif;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	margin-top: 24px;
@@ -2072,7 +2072,7 @@ ul#nav li.current a:after {
 
 #testimonial-slider .testimonial-author .author-info span {
 	display: block;
-	font: 14px/18px "raleway-bold", sans-serif;
+	font: 14px/18px "Open Sans", sans-serif;
 	letter-spacing: 0;
 	text-transform: none;
 	color: rgba(0, 0, 0, 0.6);
@@ -2123,7 +2123,7 @@ ul#nav li.current a:after {
 	}
 
 	#testimonial-slider p {
-		font: 25px/1.9 "merriweather-regular", sans-serif;
+		font: 25px/1.9 "Open Sans", sans-serif;
 	}
 
 }
@@ -2134,7 +2134,7 @@ ul#nav li.current a:after {
 	}
 
 	#testimonial-slider p {
-		font: 22px/1.9 "merriweather-regular", sans-serif;
+		font: 22px/1.9 "Open Sans", sans-serif;
 	}
 
 }
@@ -2145,11 +2145,11 @@ ul#nav li.current a:after {
 	}
 
 	#testimonial-slider p {
-		font: 20px/1.9 "merriweather-regular", sans-serif;
+		font: 20px/1.9 "Open Sans", sans-serif;
 	}
 
 	#testimonial-slider .testimonial-author {
-		font: 14px/24px "raleway-heavy" sans-serif;
+		font: 14px/24px "Open Sans", sans-serif;
 	}
 
 	#testimonial-slider .testimonial-author img {
@@ -2159,7 +2159,7 @@ ul#nav li.current a:after {
 	}
 
 	#testimonial-slider .testimonial-author .author-info span {
-		font: 12px/18px "raleway-bold", sans-serif;
+		font: 12px/18px "Open Sans", sans-serif;
 	}
 
 }
@@ -2170,7 +2170,7 @@ ul#nav li.current a:after {
 	}
 
 	#testimonial-slider p {
-		font: 18px/1.9 "merriweather-regular", sans-serif;
+		font: 18px/1.9 "Open Sans", sans-serif;
 	}
 
 }
@@ -2188,7 +2188,7 @@ ul#nav li.current a:after {
 }
 
 #contact h3 {
-	font: 18px/36px "raleway-heavy", sans-serif;
+	font: 18px/36px "Open Sans", sans-serif;
 	color: #fdc501;
 	padding: 0;
 	margin-bottom: 6px;
@@ -2226,7 +2226,7 @@ ul#nav li.current a:after {
 	}
 
 	#contact .right p.lead {
-		font: 18px/36px "merriweather-light", serif;
+		font: 18px/36px "Open Sans", sans-serif;
 	}
 
 }
@@ -2238,7 +2238,7 @@ ul#nav li.current a:after {
 	}
 
 	#contact .right p.lead {
-		font: 17px/33px "merriweather-light", serif;
+		font: 17px/33px "Open Sans", sans-serif;
 	}
 
 }
@@ -2272,7 +2272,7 @@ ul#nav li.current a:after {
 }
 
 #contact form div label {
-	font: 11px/24px "raleway-bold", sans-serif;
+	font: 11px/24px "Open Sans", sans-serif;
 	position: absolute;
 	bottom: 3px;
 	right: 6px;
@@ -2293,7 +2293,7 @@ input[type="email"],
 }
 
 #contact button.submitform {
-	font: 15px/30px "raleway-heavy", sans-serif;
+	font: 15px/30px "Open Sans", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	height: 60px;
@@ -2338,7 +2338,7 @@ input[type="email"],
 
 #submit-loader .text-loader {
 	display: none;
-	font: 14px/30px "raleway-heavy", sans-serif;
+	font: 14px/30px "Open Sans", sans-serif;
 	color: #FFFFFF;
 	letter-spacing: 3px;
 	text-transform: uppercase;
@@ -2489,7 +2489,7 @@ footer .copyright {
 	clear: both;
 	margin: 15px 0;
 	padding: 24px 18px 6px 18px;
-	font: 14px/24px "raleway-medium", sans-serif;
+	font: 14px/24px "Open Sans", sans-serif;
 	letter-spacing: .5px;
 	text-align: center;
 }
@@ -2593,7 +2593,7 @@ footer .social-links li:first-child {
 	color: #FFFFFF;
 	text-align: center;
 	border-radius: 3px;
-	font: 12px/54px "raleway-heavy", sans-serif;
+	font: 12px/54px "Open Sans", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	-moz-transition: all 0.3s ease-in-out;
