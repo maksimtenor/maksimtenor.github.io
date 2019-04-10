@@ -28,7 +28,7 @@ a {
     outline: none;
 }
 
-/* h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6, p {
     font-family: 'Open Sans', arial, sans-serif;
     font-weight: normal;
     letter-spacing: 1px;
@@ -41,6 +41,7 @@ body{
     background: #f7f7f7;
     background-image: url(img/bg-cont.png);
     background-repeat: repeat;
+    
 }
 /* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
 header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
@@ -59,7 +60,7 @@ header:after, .container:after, footer:after, .widget-posts-list li:after, #subs
 header{
     z-index: 99999;
     width: 100%;
-    height: 55px;
+    height: 100%;
     background-color: #252222;
     box-shadow: 0 0 10px rgba(0,0,0,5);
     padding: 0;
@@ -152,6 +153,16 @@ header{
 /* класс, который будет добавлен в верхнему меню при нажатии на кнопку и покажет скрытое меню*/
 #menu.active {
     max-height: 205px;
+    top: 50px;
+    background: rgb(37,34,34, 0.8);
+}
+#menu.active a {
+    background: rgb(37,34,34,);
+    color: #fff;
+}
+#menu.active a:hover {
+    background: rgb(163, 163, 163, 0.3);
+    color: #fff;
 }
 
 
@@ -162,11 +173,10 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: inline-block;
     width: 100%;
     height: 500px;
     position: relative;
-    top: -50px;
+    /* top: -50px; */
 }
 
 /* Конец шапки сайта */
@@ -180,7 +190,7 @@ header{
 }
 #works{
     z-index: 999;
-    top: -100px;
+    /* top: -100px; */
     width: 100%;
     position: relative;
     display: inline-block;
@@ -251,7 +261,7 @@ header{
 /* Сетка GRID NEWS начало */
 .grid-news {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-auto-rows: minmax(200px, 200px);
     grid-column-gap: 100px;
     grid-row-gap: 350px;
@@ -266,7 +276,7 @@ header{
 /* Сетка GRID NEWS конец */
 .news{
     z-index: 990;
-    top: -100px;
+    /* top: -100px; */
     width: 100%;
     position: relative;
     display: inline-block;
@@ -386,7 +396,7 @@ float: right;
 } 
 
 
-/*cont-right*/
+/*cont-left-конец*/
 
 /*cont-right*/
 
@@ -414,7 +424,7 @@ float: right;
 }
 .tags-info-block{
     float: left;
-    width: 350px;
+    /* width: 350px; */
 }
 #cont-right>.tags-info-block>ul{
     text-align: left;
@@ -474,7 +484,7 @@ margin: 0;
 .cont-right-block{
     display: inline-block;
     float: left;
-    width: 350px;
+    /* width: 350px; */
 }
 .cont-right-block>.coment-1{
     display: inline-block;
@@ -484,7 +494,7 @@ margin: 0;
 .coment-text{
     display: inline-block;
     float: left;
-    width: 250px;
+    /* width: 250px; */
 }
 .cont-right-block>.coment-1>.coment-text>p{
     display: inline;
@@ -522,11 +532,6 @@ margin: 0;
 .cont-right-block>.coment-2>img{
     display: inline-block;
     float: left;
-}
-.cont-right-block{
-    display: inline-block;
-    float: left;
-    width: 350px;
 }
 .cont-right-block>.coment-2{
     display: inline-block;
@@ -575,6 +580,244 @@ margin: 0;
 
 
 
+/* Начало раздела "Биография" */
+/* Сетка GRID NEWS начало */
+.grid-bio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 490px));
+    grid-auto-rows: minmax(400px, 500px);
+    grid-column-gap: 0;
+    justify-items: center;
+    align-items: start;
+    justify-content: center;
+}
+.grid-bio div {
+    
+    /* background-color: #28314e;
+    border: 1px solid #28314e; */
+    border-radius: 5px;
+}
+/* Сетка GRID NEWS конец */
+/* BIO BIO BIO */
+
+#bio{
+    z-index: 990;
+    /* top: -100px; */
+    width: 100%;
+    position: relative;
+    background-color: #E2534B;
+    background-image: url(img/bio.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,5);
+ /* overflow: hidden; */
+}
+#bio .cont-bio{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+
+.cont-bio h1{
+    color: #252222;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch:condensed;
+    text-transform: uppercase;
+}
+.inst-bio-icon {
+    text-align: center;
+    padding: 10px 0;
+}
+.inst-bio-icon a {
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+}
+.inst-bio-icon a:hover{
+    color: rgb(101,186,153);
+}
+
+/* LEFT BIO */
+.cont-bio{
+    display: inline-block;
+}
+.cont-bio .cont-left-bio{
+    float: left;
+    display: inline-block;
+    width: 100%;
+}
+.cont-bio .cont-left-bio h1{
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.cont-bio .cont-left-bio .img-bio{
+    height: 230px;
+    width: 100%;
+    display: inline-block;
+    /* background-image: url(img/bg-bio.png); */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.cont-bio .cont-left-bio .img-bio img{
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cont-bio .cont-left-bio .inst-bio{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+.cont-bio .cont-left-bio .inst-bio>a{
+    margin: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 50%;  
+    
+}
+.cont-bio .cont-left-bio .inst-bio a img{
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.cont-bio .cont-left-bio .inst-bio a img:hover{
+    border: 2px solid #59a386;
+    border-radius: 50%;
+    box-sizing: border-box;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+}
+
+
+
+/* RIGHT BIO */
+.cont-bio .cont-right-bio{
+    width: 100%;
+    float: right;
+    display: inline-block;
+}
+.cont-bio .cont-right-bio h2{
+    text-align: left;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.cont-right-bio h3{
+    text-align: left;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 20px;
+    
+}
+.cont-right-bio h4{
+    text-align: left;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 20px;
+    
+}
+/* Конец раздела "Биография" */
+
+/* CONTACTS */
+#footer{
+    background-color: #59a386;
+    background-image: url(img/footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* top: -100px; */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 100px 0;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,5);
+}
+#footer .contact{
+    display: inline-block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#footer .contact h1{
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch:condensed;
+    text-transform: uppercase;
+    margin-top: 70px;
+}
+#footer .contact h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+#footer .contact h3{
+    font-size: 36px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+#footer .contact h4{
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    margin-top: 45px;
+    text-transform: uppercase;
+}
+#footer .contact h6{
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #fff;
+    margin-top: 100px;
+}
+/* CONTACTS КОНЕЦ */
 
 
 
@@ -665,6 +908,9 @@ margin: 0;
     .footer-col:last-child {
         text-align: center;
         margin-bottom: 0;
+    }
+    #footer .contact h3 {
+        font-size: 30px;
     }
 }
 
