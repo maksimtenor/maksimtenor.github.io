@@ -1,0 +1,666 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+*{
+    transition: .2s ease-in-out;
+    /* добавим плавность переходов для всех элементов страницы */
+}
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+/* h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+} */
+body{
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    color: #b8b8b8;
+    background: #f7f7f7;
+    background-image: url(img/bg-cont.png);
+    background-repeat: repeat;
+    
+}
+/* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
+header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* стилевой класс, который управляет шириной контейнера сетки*/
+.container {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1024px;
+    padding: 0 15px;
+}
+/* Стили для шапки и её содержимого */
+header{
+    z-index: 99999;
+    width: 100%;
+    height: 90px;
+    background-color: #ffffff;
+    /* box-shadow: 0 0 10px rgba(0,0,0,5); */
+    padding: 0;
+    position: relative;
+    bottom: 0;
+    top: 0;
+    text-align: center;
+}
+/* логотип */
+.logo {
+    display: block;
+    float: left;
+}
+.logo span{
+    color: white;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    /* font-size: 36px;
+    line-height: 30px;
+    border-radius: 50%; */
+    margin: 20px 0;
+    /* font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, .4); */
+}
+/* меню */
+#menu {
+    float: right;
+    /* margin-right: 20px; */
+    margin-top: 25px;
+}
+#menu li {
+    display: inline-block;
+}
+#menu a{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* font-weight: 600; */
+    font-family: 'Open Sans', arial, sans-serif;
+    display: inline-block;
+    line-height: 40px;
+    /* background-color: #65BA99; */
+    /* margin-right: 30px; */
+    padding: 0 30px 0 30px;
+    text-align: center;
+}
+#menu a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #65BA99;
+}
+#menu li:last-child {
+    margin-right: 0;
+}
+
+
+/* кнопка переключения меню, появляющаяся при ширине 768px */
+.nav-toggle {
+    display: none;
+    position: relative;
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    background: rgb(7, 122, 88);
+    cursor: pointer;
+}
+.nav-toggle span {
+    display: block;
+    position: absolute;
+    top: 19px;
+    left: 8px;
+    right: 8px;
+    height: 2px;
+    background: white;
+}
+.nav-toggle span:before, .nav-toggle span:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+}
+.nav-toggle span:before {
+    top: -10px;
+}
+.nav-toggle span:after {
+    bottom: -10px;
+}
+/* класс, который будет добавлен в верхнему меню при нажатии на кнопку и покажет скрытое меню*/
+#menu.active {
+    max-height: 205px;
+    top: 50px;
+    background: rgb(37,34,34, 0.8);
+}
+#menu.active a {
+    background: rgb(37,34,34,);
+    color: #fff;
+}
+#menu.active a:hover {
+    background: rgb(163, 163, 163, 0.3);
+    color: #fff;
+}
+/* Шапка сайта */
+.head{
+    background-image: url(img/header/jumbotron.jpg);
+    background-color: #676767;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    padding-bottom: 100px;
+    /* top: -50px; */
+}
+.head h1 {
+    /* font-family: 'Lato'; */
+    font-size: 55px;
+    display: block;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+    padding: 80px 0 50px 0;
+}
+.head h1 span {
+    display: inline-block;
+    font-weight: bold;
+}
+.head h2 {
+    font-size: 18px;
+    display: block;
+    color: rgb(211, 211, 211);
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.head button {
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 24px;
+    background-color: #65BA99;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.head button:hover{
+    background-color: rgba(189, 70, 70, 0.767);
+}
+.head span {
+    display: block;
+}
+.head span a {
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    font-family: 'FontAwesome';
+    font-size: 50px;
+}
+.button-header{
+    display: block;
+}
+
+/* Конец шапки сайта */
+/* PORTFOLIO Начало */
+.portfolio{
+    background-color: #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    padding-bottom: 100px;
+    /* top: -50px; */
+}
+.portfolio h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 28px;
+    color: #000;
+}
+.portfolio h2 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+
+
+
+
+
+/* меню */
+#menu-nav {
+    text-align: center;
+    /* margin-right: 20px; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#menu-nav li {
+    display: inline-block;
+}
+#menu-nav a{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* font-weight: 600; */
+    font-family: 'Open Sans', arial, sans-serif;
+    display: inline-block;
+    line-height: 40px;
+    font-size: 12px;
+    background-color: #65BA99;
+    margin-right: 10px;
+    padding: 0 10px 0 10px;
+    text-align: center;
+}
+#menu-nav a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(36, 124, 90);
+}
+#menu-nav li:last-child {
+    margin-right: 0;
+}
+/* PORTFOLIO Конец */
+/* Сетка грид portfolio начало */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: minmax(200px, 200px);
+    grid-gap: 50px;
+    justify-content: space-between;
+}
+.grid div {
+    background-color: #28314e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.grid img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+/* Сетка грид portfolio конец */
+
+
+
+
+
+/* ABOUT US Начало*/
+.about {
+    background-color: #16a086;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    padding-bottom: 100px;
+    /* top: -50px; */
+}
+.about span h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 28px;
+    color: #fff;
+}
+.about span h2 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 50px;
+}
+/* Сетка грид portfolio начало */
+.grid-about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    grid-template-rows: repeat(auto-fit, minmax(400px, 400px));
+    grid-column-gap: 50px;
+    grid-row-gap: 100px;
+    justify-content: center;
+}
+.grid-about div {
+    background-color: #ffffff;
+    border: none;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    height: 100%;
+    justify-items: center;
+    justify-content: center;
+}
+.grid-about img:hover {
+    /* border-radius: 50%; */
+    background-color: #15a185;
+}
+.grid-about img {
+    display: block;
+    width: 100%;
+   
+}
+.grid-about h1{
+    color: rgb(100, 100, 100);
+    text-align: center;
+    font-size: 18px;
+    padding-top: 25px;
+}
+.grid-about h2 {
+    color: rgb(100, 100, 100);
+    text-align: center;
+    font-size: 14px;
+    padding-top: 5px;
+    font-style: italic;
+    font-weight: normal;
+}
+.grid-about h3 {
+    color: rgb(100, 100, 100);
+    text-align: left;
+    font-size: 13px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+/* Сетка грид portfolio конец */
+/* ABOUT US Конец */
+
+/* CONTACT US Начало */
+.contact {
+    background-color: #ecf0f1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    padding-bottom: 100px;
+    /* top: -50px; */
+}
+.contact span h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 28px;
+    color: #444444;
+}
+.contact span h2 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #444444;
+    padding-bottom: 50px;
+}
+
+/* Сетка GRID portfolio начало */
+.grid-contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: minmax(200px, 200px);
+    grid-gap: 50px;
+    justify-content: space-between;
+}
+.container .grid-contact div{
+    display: grid;
+    align-items: center;
+    text-align: left;
+}
+.container form input{
+    width: 220px;
+    height: 40px;
+    display: inline-block;
+
+}
+.container form input:not(:nth-child(2)){
+    margin-right: 25px;
+}
+.container .grid-contact div form textarea{
+    width: 469px;
+    height: 150px;
+    margin-top: 25px;
+    
+}
+.container form button{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    background-color: #1bbc9b;
+    cursor: pointer;
+    margin-top: 25px;
+    float: right;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+.container form button:hover {
+    background-color: #15a185;
+}
+.grid-contact div span {
+    color: #444444;
+    font-family: 'FontAwesome';
+    line-height: 1.5;
+}
+.grid-contact div h1 {
+    color: #444444;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+/* Сетка GRID PORTFOLIO Конец */
+/* CONTACT US Конец */
+
+/* FOOTER Начало */
+footer {
+    background-color: #2d3e50;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    /* top: -50px; */
+}
+footer span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    float: left;
+    /* font-family: 'FontAwesome'; */
+    margin-top: 35px;
+    display: inline-block;
+}
+footer a {
+    font-family: 'FontAwesome';
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    background-color: #1bbc9b;
+    padding: 10px;
+    text-align: center;
+    float: right;
+    margin-top: 25px;
+}
+
+
+
+
+
+
+/* FOOTER Конец */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* МЕДИА-ЗАПРОСЫ */
+@media (max-width: 768px) {
+    .logo img {
+        margin-top: 15px;
+    }
+    .head h2 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /*  Показываем кнопку для переключений верхней навигаци */
+    .nav-toggle {
+        display: block;
+        margin-top: 20px;
+    }
+    header {
+        padding: 5px 0;
+    }
+    .social-bar-wrap {
+        text-align: center;
+        padding: 0;
+        float: right;
+    }
+    /* Скрываем верхнее меню, отменаем обтекание, позиционируем его, сместив на высоту шапки сайта*/
+    #menu {
+        max-height: 0;
+        background: white;
+        float: none;
+        position: absolute;
+        overflow: hidden;
+        top: 63px;
+        right: 0;
+        left: 0;
+        margin: 40px 0 0 0;
+        padding: 0;
+        z-index: 3;
+    }
+    /* Делаем элементы списка блочными, что бы они располагались друг под другом */
+    #menu li {
+       display: block;
+       text-align: center;
+       border-bottom: 1px solid #ebebe3;
+       margin-right: 0;
+    }
+    #menu a {
+        color: #373737;
+    }
+    .head{
+        height: 500px;
+    }
+    .container form input{
+        width: 100%;
+    }
+    .container form input:not(:nth-child(2)) {
+        margin-bottom: 25px;
+        margin-right: 0;
+    }
+    .container .grid-contact div form textarea {
+        width: 100%;
+    }
+    .comtainer, h1, span {
+        text-align: center;
+    }
+    .grid-contact {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-auto-rows: minmax(200px, 400px);
+        grid-gap: 50px;
+        justify-content: space-between;
+    }
+    footer {
+        height: auto;
+    }
+
+}
+
+
+
+
+@media (max-width: 480px) {
+    /* Отменяем обтекание логотипа */
+    .logo {
+        margin: 0 auto 5px;
+        display: table;
+    }
+    .logo span {
+        margin: 0;
+    }
+    /* Позиционируем меню на увеличившуюся высоту шапки */
+    #menu {
+        top: 118px;
+    }
+    /* Отменяем позиционирование кнопок соцсетей */
+    .post-social {
+        position: static;
+        text-align: center;
+        transform: none;
+        margin-top: 20px;
+    }
+    .widget-post-title {
+        font-size: 1.2em;
+    }
+    /* Отменяем обтекание для столбцов подвала страницы */
+    .footer-col {
+        float: none;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    .footer-col:last-child {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    #footer .contact h3 {
+        font-size: 30px;
+    }
+    
+}
+
