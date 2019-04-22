@@ -9,7 +9,7 @@
         href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
@@ -59,14 +59,71 @@
             </ul>
             <!-- Grid css сетка -->
             <div class="grid">
-                <div><img src="img/Main/img-1.jpg" /></div>
-                <div><img src="img/Main/img-2.jpg" /></div>
-                <div><img src="img/Main/img-3.jpg" /></div>
-                <div><img src="img/Main/img-4.jpg" /></div>
-                <div><img src="img/Main/img-5.jpg" /></div>
-                <div><img src="img/Main/img-6.jpg" /></div>
-                <div><img src="img/Main/img-1.jpg" /></div>
-                <div><img src="img/Main/img-2.jpg" /></div>
+                <div>
+                    <!-- <img src="img/Main/img-1.jpg" /> -->
+                    <div class="product-item">
+                        <img src="img/Main/img-1.jpg">
+                        <div class="product-buttons">
+                            <a href="" class="button"></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product-item">
+                        <img src="img/Main/img-2.jpg">
+                        <div class="product-buttons">
+                            <a href="" class="button"></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product-item">
+                        <img src="img/Main/img-3.jpg">
+                        <div class="product-buttons">
+                            <a href="" class="button"></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product-item">
+                        <img src="img/Main/img-4.jpg">
+                        <div class="product-buttons">
+                            <a href="" class="button"></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product-item">
+                        <img src="img/Main/img-5.jpg">
+                        <div class="product-buttons">
+                            <a href="" class="button"></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product-item">
+                        <img src="img/Main/img-6.jpg">
+                        <div class="product-buttons">
+                            <a href="" class="button"></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product-item">
+                        <img src="img/Main/img-1.jpg">
+                        <div class="product-buttons">
+                            <a href="" class="button"></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="product-item">
+                        <img src="img/Main/img-2.jpg">
+                        <div class="product-buttons">
+                            <a href="" class="button"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Конец сетки grid -->
         </div>
@@ -84,6 +141,12 @@
             <div class="grid-about">
                 <div>
                     <img src="img/Main/portfolio/ava-1.jpg" />
+                    <ul>
+                            <li><a href="" class="fa fa-facebook-f"></a></li>
+                            <li><a href="" class="fa fa-google-plus"></a></li>
+                            <li><a href="" class="fa fa-pinterest-p"></a></li>
+                            <li><a href="" class="fa fa-skype"></a></li>
+                    </ul>
                     <h1>Melannie Doe</h1>
                     <h2>Project Manager</h2>
                     <h3>Ut wisi enim ad minim veniam,
@@ -94,6 +157,12 @@
                 </div>
                 <div>
                     <img src="img/Main/portfolio/ava-2.jpg" />
+                    <ul>
+                            <li><a href="" class="fa fa-facebook-f"></a></li>
+                            <li><a href="" class="fa fa-google-plus"></a></li>
+                            <li><a href="" class="fa fa-pinterest-p"></a></li>
+                            <li><a href="" class="fa fa-skype"></a></li>
+                    </ul>
                     <h1>Melannie Doe</h1>
                     <h2>Project Manager</h2>
                     <h3>Ut wisi enim ad minim veniam,
@@ -104,6 +173,12 @@
                 </div>
                 <div>
                     <img src="img/Main/portfolio/ava-3.jpg" />
+                    <ul>
+                            <li><a href="" class="fa fa-facebook-f"></a></li>
+                            <li><a href="" class="fa fa-google-plus"></a></li>
+                            <li><a href="" class="fa fa-pinterest-p"></a></li>
+                            <li><a href="" class="fa fa-skype"></a></li>
+                    </ul>
                     <h1>Melannie Doe</h1>
                     <h2>Project Manager</h2>
                     <h3>Ut wisi enim ad minim veniam,
@@ -116,11 +191,15 @@
             <!-- Конец сетки grid -->
         </div>
     </div>
-<section id="contact"></section>
+    <section id="contact"></section>
     <div class="contact">
         <div class="container">
-            <span><h1>Contact Us</h1></span>
-            <span><h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h2></span>
+            <span>
+                <h1>Contact Us</h1>
+            </span>
+            <span>
+                <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h2>
+            </span>
             <div class="grid-contact">
                 <div>
                     <form action="text">
@@ -129,27 +208,27 @@
                         <textarea id="i3" placeholder="  Your message"></textarea>
                         <button type="submit">Submit</button>
                     </form>
-                    
+
                 </div>
                 <div>
                     <h1>Information</h1>
                     <span> Bak-One Company</br>
                         12345 Hollywood Bvld Street</br>
-                         Los Angeles, California</span>
-                         <span> +444 (Phone) 123456</span>
-                         <span> +123 (FAX) 0011223</span>
-                         <span> info@bak-onecompany.com</span>
+                        Los Angeles, California</span>
+                    <span> +444 (Phone) 123456</span>
+                    <span> +123 (FAX) 0011223</span>
+                    <span> info@bak-onecompany.com</span>
                 </div>
             </div>
 
         </div>
     </div>
 
-    
+
     <footer>
         <div class="container">
             <span>
-                © Copyright 2013 Bak-One  |  One Page Flat Template
+                © Copyright 2013 Bak-One | One Page Flat Template
             </span>
             <a href="#home" class="fa fa-chevron-up"></a>
         </div>

@@ -157,7 +157,7 @@ header{
 }
 /* Шапка сайта */
 .head{
-    background-image: url(img/header/jumbotron.jpg);
+    background-image: url(../img/header/jumbotron.jpg);
     background-color: #676767;
     background-position: center;
     background-repeat: no-repeat;
@@ -242,12 +242,16 @@ header{
     padding-top: 50px;
     font-size: 28px;
     color: #000;
+    font-family: "Open Sans";
+    font-weight: bold;
 }
 .portfolio h2 {
     padding-top: 10px;
     text-align: center;
     font-size: 16px;
     color: #000;
+    font-family: "Open Sans";
+    font-weight: normal;
 }
 
 
@@ -275,6 +279,7 @@ header{
     font-size: 12px;
     background-color: #65BA99;
     margin-right: 10px;
+    margin-top: 10px;
     padding: 0 10px 0 10px;
     text-align: center;
 }
@@ -289,22 +294,68 @@ header{
 /* Сетка грид portfolio начало */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-auto-rows: minmax(200px, 200px);
-    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: minmax(100px, 100px);
+    grid-gap: 100px;
     justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 .grid div {
-    background-color: #28314e;
-    border: none;
-    border-radius: 5px;
+    border-radius: 70%;
     cursor: pointer;
+    display: block;
 }
 .grid img {
     width: 100%;
-    margin-bottom: 50px;
+    border-radius: 70%;
+    /* margin-bottom: 50px; */
 }
-/* Сетка грид portfolio конец */
+.grid img:hover {
+    opacity: 0.5;
+}
+.product-buttons {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    opacity: 0;
+    transition: .3s ease-in-out;
+  }
+  .product-item {
+    position: relative;
+    overflow: hidden;
+  }
+  .product-wrap img {
+    display: block;
+    width: 100%;
+  }
+  .button { 
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 26px;
+    padding: 10px;
+    border-radius: 50%;
+    /* line-height: 40px; */
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    /* background: black; */
+    /* border: 2px solid #c0a97a; */
+    transform: translate(-50%, -50%) scale(0);
+    transition: .3s ease-in-out;
+    font-family: 'FontAwesome';
+  }
+  .button:before {
+    font-family: 'FontAwesome';
+    margin-right: 10px;
+  }
+  .product-item:hover .product-buttons {opacity: 1;}
+  .product-item:hover .button {transform: translate(-50%, -50%) scale(1);}
+  
+  /* Сетка грид portfolio конец */
 
 
 
@@ -328,6 +379,8 @@ header{
     padding-top: 50px;
     font-size: 28px;
     color: #fff;
+    font-family: "Open Sans";
+    font-weight: bold;
 }
 .about span h2 {
     padding-top: 10px;
@@ -335,6 +388,8 @@ header{
     font-size: 16px;
     color: #fff;
     padding-bottom: 50px;
+    font-family: "Open Sans";
+    font-weight: normal;
 }
 /* Сетка грид portfolio начало */
 .grid-about {
@@ -353,6 +408,9 @@ header{
     height: 100%;
     justify-items: center;
     justify-content: center;
+}
+.grid-about div:hover{
+    background-color: rgb(255,255,255, 0.8);
 }
 .grid-about img:hover {
     /* border-radius: 50%; */
@@ -388,6 +446,31 @@ header{
     line-height: 1.5;
 }
 /* Сетка грид portfolio конец */
+.grid-about ul{
+    background-color: rgba(0,161,134, 0.7);
+    width: 150px;
+    position: absolute;
+    text-align: center;
+    margin-top: -100px;
+    margin-left: 25px;
+}
+.grid-about ul li{
+    list-style: none;
+    display: inline-block;
+
+    
+}
+.grid-about ul li a:hover{
+    color: #000;
+}
+.grid-about ul li a{
+    font-family: 'FontAwesome';
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    /* height: 50px; */
+    margin: 0;
+}
 /* ABOUT US Конец */
 
 /* CONTACT US Начало */
@@ -408,6 +491,8 @@ header{
     padding-top: 50px;
     font-size: 28px;
     color: #444444;
+    font-family: "Open Sans";
+    font-weight: bold;
 }
 .contact span h2 {
     padding-top: 10px;
@@ -415,6 +500,8 @@ header{
     font-size: 16px;
     color: #444444;
     padding-bottom: 50px;
+    font-family: "Open Sans";
+    font-weight: normal;
 }
 
 /* Сетка GRID portfolio начало */
@@ -607,6 +694,15 @@ footer a {
     }
     .comtainer, h1, span {
         text-align: center;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-auto-rows: minmax(100px, 100px);
+        grid-gap: 50px;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        margin-top: 50px;
     }
     .grid-contact {
         display: grid;
