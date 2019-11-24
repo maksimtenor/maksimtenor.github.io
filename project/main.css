@@ -997,7 +997,7 @@ border-color: none;
 footer {
     display: inline-block;
     width: 100%;
-    height: 400px;
+    height: 100%;
     background-color: #fafafa;
     color: #000;
     background-position: center;
@@ -1008,7 +1008,194 @@ footer {
     padding: 0;
     background-image: url(img/footerBg.jpg);
 }
+.footer_position_blocks {
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    text-align: left;
+}
+.footer_left {
+    display: block;
+    float: left;
+    width: 33%;
+}
+.footer_left img {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.footer_left h1 {
+    margin-bottom: 70px;
+    font-size: 14px;
+    width: 285px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.788);
+    cursor: default;
+}
+.footer_left a {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.788);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+.footer_left div {
 
+}
+
+
+.footer_center {
+    text-align: left;
+    display: block;
+    float: left;
+    width: 33%;
+}
+.footer_center h1 {
+    margin-bottom: 35px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: black;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: left;
+    cursor: default;
+    padding-top: 10px;
+}
+.footer_center h2 {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.788);
+    text-align: left;
+    cursor: default;
+}
+.footer_center h3 {
+    display: block;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.788);
+    text-align: left;
+    cursor: default;
+}
+.footer_center span {
+    display: inline-block;
+    text-align: left;
+    float: left;
+    cursor: default;
+    line-height: 14px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+.footer_center span img {
+    
+}
+
+.footer_right {
+    display: block;
+    float: left;
+    width: 33%;
+}
+.footer_right h1 {
+    margin-bottom: 35px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: black;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: left;
+    cursor: default;
+    padding-top: 10px;
+}
+.footer_right input {
+    display: inline-block;
+    float: left;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    padding: 10px 0px 10px 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.425);
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.788);
+}
+.footer_right button {
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+    margin-left: 5px;
+    display: inline-block;
+    /* float: left; */
+    border: 1px solid #a199b348;
+    width: 65px;
+    height: 38px;
+    line-height: 37px;
+    background: #a199b348;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer_right button:hover {
+    background-color: #bbbbbb7e;
+    color: #fff;
+    border-color: #bbbbbb7e;
+}
+.footer_right button img {
+    display: inline-block;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
+    text-align: center;
+    padding-top: 5px;
+}
+.footer_right span {
+    /* display: inline-block; */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 37px;
+}
+.footer_right div {
+
+}
+.footer_right_social {
+
+}
+
+.footer_right_social a {
+    margin: 0;
+    margin-top: 25px;
+    margin-right: 5px;
+    margin-bottom: 60px;
+    padding: 0;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.5s;
+}
+.footer_right_social a:hover {
+    color: #000;
+    background-color: #fff;
+}
+.footer_right p {
+    display: block;
+    cursor: default;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #fff;
+}
 
 
 
