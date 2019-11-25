@@ -624,7 +624,9 @@ header {
     height: 225px;
 }
 .card_1_photo img {
-
+    position: relative;
+    width: 100%;
+    height: 225px;
 }
 .card_1_text {
     text-align: center;
@@ -1239,6 +1241,23 @@ footer {
 @media (max-width: 960px) {
     .container {
         width: 100%;
+        display: block;
+        text-align: center;
+    }
+    /* button {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+
+    } */
+    .content button {
+        margin-top: 80px;
+    }
+    .nav_dots {
+        display: inline-block;
+    }
+    .nav_dots ol {
+        display: inline-block;
     }
     .expertize_block_content {
         display: grid;
@@ -1249,6 +1268,9 @@ footer {
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         /* background-color: #408288; */
+    }
+    .content {
+        margin-top: 50px;
     }
     .content h2 {
         margin: 0;
@@ -1261,8 +1283,20 @@ footer {
         line-height: 25px;
         opacity: 0.8;
     }
+    .text_block_our_story button {
+        display: inline-block;
+        /* float: none; */
+        margin: 0;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    .our_story {
+        display: block;
+    }
     .cont_our_story {
-        display: grid;
+        display: block;
         align-self: center;
         grid-template-columns: auto;
         grid-template-rows: 250px 250px;
@@ -1294,10 +1328,107 @@ footer {
         line-height: 20px;
         font-weight: 300;
     }
+    .card_1 {
+        margin-bottom: 25px;
+    }
+    .team_block {
+        height: auto;
+    }
+    .team_block_cards {
+        height: 100%;
+    }
+    .team_block_footer button {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .team_block_footer {
+        display: block;
+    }
+    .works {
+        height: 100%;
+        display: block;
+    }
+    .works_header span {
+        float: none;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+    .works_content_galery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .works_header h2 {
+        /* float: none; */
+        margin-right: 0;
+    }
     .works_footer {
-        display: inline-block;
+        display: block;
         width: 100%;
         height: 170px;
-        background-color: #384e5a;
+        float: none;
+    }
+    .forms {
+        display: block;
+        float: none;
+    }
+    .forms_left {
+        display: block;
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .coments {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        float: none;
+        text-align: center;
+    }
+    .coments_header h2 {
+        width: auto;
+    }
+    .forms_left input {
+        width: 80%;
+        margin: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: auto;
+        float: none;
+        text-align: center;
+    }
+    .forms_left textarea {
+        width: 80%;
+        margin: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: auto;
+        float: none;
+        text-align: center;
+    }
+    .forms_left button {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .forms_right {
+        display: block;
+        width: 100%;
+        float: none;
+    }
+    .forms_right h1 {
+        width: auto;
+    }
+    .forms_right img {
+        /* line-height: 70px; */
+        margin-left: 0;
+    }
+    .footer_left,
+    .footer_center,
+    .footer_right {
+        display: block;
+        width: 100%;
+        text-align: center;
+        float: none;
     }
   }
+  
