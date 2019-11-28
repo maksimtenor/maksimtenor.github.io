@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
     <title>myProject</title>
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.1.0.js"></script>
 </head>
 
 <body>
@@ -21,7 +23,9 @@
                 <div class="logo">
                     <img src="img/logo.png">
                 </div>
-                <div class="nav_menu">
+                <span class="nav_burger">&#9776;</span>
+
+                <div class="nav_menu" id="hint">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -33,7 +37,44 @@
                     </ul>
                 </div>
             </div>
+            <script>
+                var btn = document.querySelector('span');
 
+                btn.addEventListener('click', function () {
+                    var hint = document.getElementById('hint');
+                    if (hint.style.display == 'none') {
+                        hint.style.display = 'block';
+                    }
+                    else {
+                        hint.style.display = 'none';
+                    }
+
+                });
+// То что  сверху это переключатель бургер меню, а то что снизу это возврат дефолт значения
+                function myFunction() {
+                    if ($(window).width() < 960) {
+                        hint.style.display == 'none'
+                    }
+                    else {
+                        hint.style.display = 'block'
+                    }
+                }
+                //вызываем
+                myFunction();
+                //ну и при ресайзе перепроверяем
+                $(window).resize(function (This) {
+                    myFunction();
+                });
+
+                    // $(document).ready(function(){
+
+                    // $('button').click(function(){
+                    // $('#hint').toggle('slow');
+
+                    // });
+
+                    // });
+            </script>
 
             <div class="content">
                 <h1>We Are Awesome Creative Agency</h1>
@@ -247,13 +288,55 @@
                 <h3>JANE GALADRIEL</h3>
                 <h4>CEO TENGKUREP</h4>
             </div>
-            <div class="coments_content">
-                <span><img src="img/left_1.png" width="8" height="11"></span>
-                <span><img src="img/right_1.png" width="8" height="11"></span>
+            <div id="carousel" class="carousel">
+                <button class="arrow prev">&lt;</button>
+                <div class="gallery">
+                    <ul class="images">
+                        <li><img src="img/icon_galery1.png"></li>
+                        <li><img src="img/icon_galery2.png"></li>
+                        <li><img src="img/icon_galery3.png"></li>
+                        <li><img src="img/icon_galery4.png"></li>
+                        <li><img src="img/icon_galery5.png"></li>
+                    </ul>
+                </div>
+                <button class="arrow next">&gt;</button>
             </div>
         </div>
     </div>
+    <script>
+        /* этот код помечает картинки, для удобства разработки */
+        let i = 1;
+        for (let li of carousel.querySelectorAll('li')) {
+            li.style.position = 'relative';
+            li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
+            i++;
+        }
 
+        /* конфигурация */
+        let width = 45; // ширина картинки
+        let count = 3; // видимое количество изображений
+
+        let list = carousel.querySelector('ul');
+        let listElems = carousel.querySelectorAll('li');
+
+        let position = 0; // положение ленты прокрутки
+
+        carousel.querySelector('.prev').onclick = function () {
+            // сдвиг влево
+            position += width * count;
+            // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+            position = Math.min(position, 0)
+            list.style.marginLeft = position + 'px';
+        };
+
+        carousel.querySelector('.next').onclick = function () {
+            // сдвиг вправо
+            position -= width * count;
+            // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+            position = Math.max(position, -width * (listElems.length - count));
+            list.style.marginLeft = position + 'px';
+        };
+    </script>
 
     <div class="forms">
         <div class="container">
