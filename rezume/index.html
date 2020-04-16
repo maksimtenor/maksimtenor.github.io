@@ -9,8 +9,23 @@
     <link rel="stylesheet" href="style.css">
     <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
+    <script defer src="js/main.js" type="text/javascript"></script>
 </head>
 <body>
+<div id="formahead">
+    <span id="close" >&times;</span>
+    <form action="text" method="post">
+        <h2 class="formh2">Заполните форму ниже</h2>
+        <label for="name">Введите ваш логин:<span class="spanZ">*</span></label>
+        <p class="input"><input required name="username" type="User" placeholder="User name" maxlength="30"></p>
+        <label for="name">Введите Email:<span class="spanZ">*</span></label>
+        <p class="input"><input required name="email" type="text" placeholder="Email" maxlength="30"></p>
+        <label for="name">Ваше сообщение:<span class="spanZ">*</span></label>
+        <p class="input"><textarea required name="message" id="" cols="30" rows="10" placeholder="Сообщение" maxlength="250"></textarea></p>
+        <button type="submit" class="formButton">Отправить</button>
+    </form>
+</div>
+
     <section id="home"></section>
     <div id="container">
             
@@ -23,8 +38,8 @@
                     <a href="#bios">Bio</a>
                     <a href="#contacts">Contact</a>
             </div>
-            <div class="inst">
-                    <a href="https://www.instagram.com/renhevich/" target="_blank">
+            <div id="inst">
+                    <a target="none">
                         
                     </a>
             </div>

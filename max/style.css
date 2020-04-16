@@ -246,12 +246,14 @@ header{
     grid-auto-rows: minmax(200px, 200px);
     grid-gap: 20px;
     justify-content: space-between;
+    outline:none;
 }
 .grid div {
-    background-color: #28314e;
-    border: 1px solid #28314e;
+    background-color: none;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
+    outline:none;
 }
 /* Сетка грид portfolio конец */
 
@@ -266,12 +268,14 @@ header{
     grid-column-gap: 100px;
     grid-row-gap: 350px;
     justify-content: space-between;
+    outline:none;
 }
 .grid-news div {
     /* background-color: #28314e;
     border: 1px solid #28314e; */
     border-radius: 5px;
     justify-content: center;
+    outline:none;
 }
 /* Сетка GRID NEWS конец */
 .news{
@@ -289,6 +293,7 @@ header{
     background-size: cover;
     box-shadow: 0 0 10px rgba(0,0,0,5);
     /* overflow: hidden; */
+    outline:none;
     
     
 }

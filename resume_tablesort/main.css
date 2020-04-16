@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+}
+table{
+  border: 1px solid #000;
+  display: inline-block;
+  text-align: center;
+}
+th{
+  border: 1px solid #000;
+  text-align: center;
+  cursor: pointer;
+}
+tr{
+  border: 1px solid #000;
+}
+td{
+  border: 1px solid #000;
+}
