@@ -5,14 +5,18 @@ table{
 border: 1px solid #000;
 display: inline-block;
 text-align: center;
+
 }
 th{
 border: 1px solid #000;
 text-align: center;
 cursor: pointer;
+width: 1024px;
 }
 tr{
 border: 1px solid #000;
+
+height: 50px;
 }
 td{
 border: 1px solid #000;
