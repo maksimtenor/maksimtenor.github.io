@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="main.css">
+<!-- <link rel="stylesheet" href="main.css"> -->
 <script src="main.js" defer></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous" defer></script>
@@ -13,13 +13,23 @@
 <title>Table Sort</title>
 </head>
 <body>
-  <table class="table table-dark">
-    <thead>
+  <style>
+    .col1,
+    .col2,
+    .col3,
+    .col4{
+      cursor: pointer;
+    }
+  </style>
+
+
+  <table id="myTable" class="table table-striped">
+    <thead class="thead-dark">
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">Имя</th>
-        <th scope="col">Фамилия</th>
-        <th scope="col">Username</th>
+        <th class="col1" scope="col">#</th>
+        <th class="col2" scope="col">Имя</th>
+        <th class="col3" scope="col">Фамилия</th>
+        <th class="col4" scope="col">Username</th>
       </tr>
     </thead>
     <tbody>
