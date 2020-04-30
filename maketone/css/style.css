@@ -100,6 +100,7 @@ header{
 #menu a:hover{
     color: rgb(255, 255, 255);
     background-color: #65BA99;
+    border-radius: 2px;
 }
 #menu li:last-child {
     margin-right: 0;
@@ -175,7 +176,7 @@ header{
     display: block;
     color: #fff;
     font-family: "Open Sans", sans-serif;
-    font-weight: lighter;
+    font-weight: normal;
     padding: 80px 0 50px 0;
 }
 .head h1 span {
@@ -183,21 +184,23 @@ header{
     font-weight: bold;
 }
 .head h2 {
-    font-size: 18px;
+    font-size: 16px;
     display: block;
-    color: rgb(211, 211, 211);
-    font-family: "Open Sans", sans-serif;
-    font-weight: normal;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200;
     text-align: center;
+    line-height: 25px;
     margin-bottom: 50px;
     margin-left: 150px;
     margin-right: 150px;
 }
-.head button {
+#head__container_button {
     display: inline-block;
     font-size: 14px;
-    padding: 10px 24px;
-    background-color: #65BA99;
+    padding: 10px 15px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(0, 255, 157, 0.555);
     color: #fff;
     border: none;
     cursor: pointer;
@@ -205,8 +208,11 @@ header{
     outline: none;
     text-transform: uppercase;
     margin-bottom: 50px;
+    text-align: center;
+    border-radius: 2px;
+    font-weight: bold;
 }
-.head button:hover{
+#head__container_button:hover{
     background-color: rgba(189, 70, 70, 0.767);
 }
 .head span {
@@ -220,9 +226,80 @@ header{
     font-size: 50px;
 }
 .button-header{
-    display: block;
+    opacity: 0.5;
+    display: inline-block;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
-
+.button-header:hover{
+    -webkit-animation: 0.1s tremor ease-out 2;  
+    animation: 0.1s tremor ease-out 2;   
+    opacity: 1;
+}
+@-webkit-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        top:-1px;
+        -webkit-transform: translateX(-4%);
+        transform: translateX(-4%);
+    }
+    50%, 100% {
+        left: 1px;
+        top: 1px;
+        -webkit-transform: translateX(4%);
+        transform: translateX(4%);
+    }
+}
+@-moz-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translateX(-4%);
+        transform: translateX(-4%);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translateX(4%);
+        transform: translateX(4%);
+    }
+}
+@-ms-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translateX(-4%);
+        transform: translateX(-4%);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translateX(4%);
+        transform: translateX(4%);
+    }
+}
+@-o-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translateX(-4%);
+        transform: translateX(-4%);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translateX(4%);
+        transform: translateX(4%);
+    }
+}
+@keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translateX(-4%);
+        transform: translateX(-4%);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translateX(4%);
+        transform: translateX(4%);
+    }
+}
 /* Конец шапки сайта */
 /* PORTFOLIO Начало */
 .portfolio{
@@ -278,6 +355,7 @@ header{
     line-height: 40px;
     font-size: 12px;
     background-color: #65BA99;
+    border-radius: 2px;
     margin-right: 10px;
     margin-top: 10px;
     padding: 0 10px 0 10px;
@@ -285,7 +363,7 @@ header{
 }
 #menu-nav a:hover{
     color: rgb(255, 255, 255);
-    background-color: rgb(36, 124, 90);
+    background-color: rgba(189, 70, 70, 0.767);
 }
 #menu-nav li:last-child {
     margin-right: 0;
@@ -294,9 +372,9 @@ header{
 /* Сетка грид portfolio начало */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(4, 50px 1fr) 50px;
     grid-auto-rows: minmax(100px, 100px);
-    grid-gap: 100px;
+    grid-gap: 10px;
     justify-content: space-between;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -323,6 +401,7 @@ header{
     background: rgba(0, 0, 0, .7);
     opacity: 0;
     transition: .3s ease-in-out;
+    border-radius: 50%;
   }
   .product-item {
     position: relative;
@@ -403,7 +482,7 @@ header{
 .grid-about div {
     background-color: #ffffff;
     border: none;
-    /* border-radius: 5px; */
+    /* border-radius: 2px; */
     cursor: pointer;
     height: 100%;
     justify-items: center;
@@ -411,9 +490,10 @@ header{
 }
 .grid-about div:hover{
     background-color: rgb(255,255,255, 0.8);
+    /* border-radius: 10px; */
 }
 .grid-about img:hover {
-    /* border-radius: 50%; */
+   
     background-color: #15a185;
 }
 .grid-about img {
@@ -465,11 +545,19 @@ header{
 }
 .grid-about ul li a{
     font-family: 'FontAwesome';
+    font-size: 18px;
     color: #fff;
     font-size: 18px;
     padding: 10px;
     /* height: 50px; */
     margin: 0;
+}
+
+.container__about_card{
+    overflow: hidden;
+}
+.container__about_card:hover{
+    transform: scale(1.1);
 }
 /* ABOUT US Конец */
 
@@ -511,6 +599,11 @@ header{
     grid-auto-rows: minmax(200px, 200px);
     grid-gap: 50px;
     justify-content: space-between;
+
+}
+.grid__form {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
 }
 .container .grid-contact div{
     display: grid;
@@ -521,7 +614,10 @@ header{
     width: 220px;
     height: 40px;
     display: inline-block;
-
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #444444;
 }
 .container form input:not(:nth-child(2)){
     margin-right: 25px;
@@ -530,7 +626,24 @@ header{
     width: 469px;
     height: 150px;
     margin-top: 25px;
-    
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #444444;
+}
+.grid-contact__information-items{
+    text-align: left;
+}
+.information-items {
+    width: 5px;
+}
+.information-items_left{
+float: left;
+}
+
+.information-items_right{
+float: left;
+margin-left: 10px;
 }
 .container form button{
     width: 100px;
@@ -545,9 +658,10 @@ header{
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 12px;
+    border-radius: 2px;
 }
 .container form button:hover {
-    background-color: #15a185;
+    background-color: rgba(189, 70, 70, 0.767);
 }
 .grid-contact div span {
     color: #444444;
@@ -579,7 +693,7 @@ footer span {
     margin-top: 35px;
     display: inline-block;
 }
-footer a {
+.container__footer_a {
     font-family: 'FontAwesome';
     text-decoration: none;
     color: #fff;
@@ -589,6 +703,26 @@ footer a {
     text-align: center;
     float: right;
     margin-top: 25px;
+    border-radius: 2px;
+}
+.container__footer_a:hover {
+    transform: rotate(360deg);
+    transition: 0.7s;
+    animation-name: colorsss;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+@keyframes colorsss {
+    0% {
+        background-color: #1bbc9b;
+    }
+    50% {
+        background-color: rgba(189, 70, 70, 0.767);
+        
+    }
+    100% {
+        background-color: rgba(189, 70, 70, 0.767);
+    }
 }
 
 
@@ -680,7 +814,7 @@ footer a {
         color: #373737;
     }
     .head{
-        height: 500px;
+        /* height: 500px; */
     }
     .container form input{
         width: 100%;
@@ -699,10 +833,13 @@ footer a {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         grid-auto-rows: minmax(100px, 100px);
-        grid-gap: 50px;
+        grid-gap: 20px;
         justify-content: space-between;
         margin-bottom: 50px;
         margin-top: 50px;
+    }
+    .portfolio{
+        padding-bottom: 0px;
     }
     .grid-contact {
         display: grid;
