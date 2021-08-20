@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+    <script defer src="js/jquery.js" type="text/javascript"></script>
+    <script defer src="js/cart.js" type="text/javascript"></script>
+    <script defer src="js/scroll-top.js" type="text/javascript"></script>
+    <script defer src="js/add-to-cart.js" type="text/javascript"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Muli:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Lora:wght@400;600;700&family=Muli:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/96a023a31b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>KENAKATA - Интернет магазин мужской и женской одежды</title>
+
+
+       <!-- favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon1.png" >
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <section id="top"></section>
+
+    <nav class="nav-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="main.html" class="logo">kenakata</a>
+                </div>
+                <div class="col-md-9">
+                    <div id="menu" class="navigation default">
+                        <a href="#top" class="navigation__link">Main Page</a>
+                        <a href="#new" class="navigation__link">New</a>
+                        <a href="#fetured" class="navigation__link">Fetured</a>
+                        <a href="#blog" class="navigation__link">Blog</a>
+                        <a href="#sub" class="navigation__link">Subscribe</a>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <a href="cart.html"><div class="cart">
+                        <img class="cart__img" src="img/icons/cart.png" width="15" height="18">
+
+                        <!-- <i class="fas fa-shopping-bag"></i> -->
+                        <div class="cart__number">0</div>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__bg">
+            </div>
+            <div class="header__content">
+                <div class="header__title">Kenakata Summer Collection
+                </div>
+                <div class="header__description">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui deserunt</br> mollit anim id est laborum.
+                </div>
+                <a href="#" class="header__button">Shop Now</a>
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <!-- Products -->
+    <section id="new"></section>
+    <div class="section">
+        <div class="container">
+            <h2 class="title">New Products</h2>
+            <div class="subtitle">dolor sit amet</div>
+            <!-- row -->
+            <div class="row">
+                <!-- col-md-3 -->
+                <div class="col-md-3">
+                    <div class="cart">
+                        <div class="cart__image">
+                            <img src="img/products/product-1.jpg" alt="">
+                            <div class="cart__hover">
+                                <a href="#" type="1" class="cart__button add" onclick="addToCart();" >Add To Cart</a>
+                                <a href="#" class="cart__button">Quik View</a>
+                            </div>
+                        </div>
+                        <div class="cart__title">Cotton Polo Shirt</div>
+                        <div class="cart__price">
+                            <span>$100.00</span> $95.00
+                        </div>
+                    </div>
+                </div>
+                <!-- //col-md-3 -->
+
+                <!-- col-md-3 -->
+                <div class="col-md-3">
+                    <div class="cart">
+                        <div class="cart__image">
+                            <img src="img/products/product-2.jpg" alt="">
+                            <div class="cart__hover">
+                                <a href="#" type="2" class="cart__button add" onclick="addToCart();" >Add To Cart</a>
+                                <a href="#" class="cart__button">Quik View</a>
+                            </div>
+                        </div>
+                        <div class="cart__title">Cotton Polo Shirt</div>
+                        <div class="cart__price">
+                            <span>$100.00</span> $95.00
+                        </div>
+                    </div>
+                </div>
+                <!-- //col-md-3 -->
+
+                <!-- col-md-3 -->
+                <div class="col-md-3">
+                    <div class="cart">
+                        <div class="cart__image">
+                            <img src="img/products/product-3.jpg" alt="">
+                            <div class="cart__hover">
+                                <a href="#" type="3" class="cart__button add" onclick="addToCart();" >Add To Cart</a>
+                                <a href="#" class="cart__button">Quik View</a>
+                            </div>
+                        </div>
+                        <div class="cart__title">Cotton Polo Shirt</div>
+                        <div class="cart__price">
+                            <span>$100.00</span> $95.00
+                        </div>
+                    </div>
+                </div>
+                <!-- //col-md-3 -->
+
+                <!-- col-md-3 -->
+                <div class="col-md-3">
+                    <div class="cart">
+                        <div class="cart__image">
+                            <img src="img/products/product-4.jpg" alt="">
+                            <div class="cart__hover">
+                                <a href="#" type="4" class="cart__button add" onclick="addToCart();" >Add To Cart</a>
+                                <a href="#" class="cart__button">Quik View</a>
+                            </div>
+                        </div>
+                        <div class="cart__title">Cotton Polo Shirt</div>
+                        <div class="cart__price">
+                            <span>$100.00</span> $95.00
+                        </div>
+                    </div>
+                </div>
+                <!-- //col-md-3 -->
+            </div>
+            <!-- //row -->
+
+            <!-- row -->
+            <div class="row">
+                <!-- col-md-3 -->
+                <div class="col-md-3">
+                    <div class="cart">
+                        <div class="cart__image">
+                            <img src="img/products/product-5.jpg" alt="">
+                            <div class="cart__hover">
+                                <a href="#" type="5" class="cart__button add" onclick="addToCart();" >Add To Cart</a>
+                                <a href="#" class="cart__button">Quik View</a>
+                            </div>
+                        </div>
+                        <div class="cart__title">Cotton Polo Shirt</div>
+                        <div class="cart__price">
+                            <span>$100.00</span> $95.00
+                        </div>
+                    </div>
+                </div>
+                <!-- //col-md-3 -->
+
+                <!-- col-md-3 -->
+                <div class="col-md-3">
+                    <div class="cart">
+                        <div class="cart__image">
+                            <img src="img/products/product-6.jpg" alt="">
+                            <div class="cart__hover">
+                                <a href="#" type="6" class="cart__button add" onclick="addToCart();" >Add To Cart</a>
+                                <a href="#" class="cart__button">Quik View</a>
+                            </div>
+                        </div>
+                        <div class="cart__title">Cotton Polo Shirt</div>
+                        <div class="cart__price">
+                            <span>$100.00</span> $95.00
+                        </div>
+                    </div>
+                </div>
+                <!-- //col-md-3 -->
+
+                <!-- col-md-3 -->
+                <div class="col-md-3">
+                    <div class="cart">
+                        <div class="cart__image">
+                            <img src="img/products/product-7.jpg" alt="">
+                            <div class="cart__hover">
+                                <a href="#" type="7" class="cart__button add" onclick="addToCart();" >Add To Cart</a>
+                                <a href="#" class="cart__button">Quik View</a>
+                            </div>
+                        </div>
+                        <div class="cart__title">Cotton Polo Shirt</div>
+                        <div class="cart__price">
+                            <span>$100.00</span> $95.00
+                        </div>
+                    </div>
+                </div>
+                <!-- //col-md-3 -->
+
+                <!-- col-md-3 -->
+                <div class="col-md-3">
+                    <div class="cart">
+                        <!-- class hovered in <div class="cart__image"> = ative hover effect -->
+                        <div class="cart__image"> 
+                            <img src="img/products/product-8.jpg" alt="">
+                            <div class="cart__hover">
+                                <a href="#" type="8" class="cart__button add" onclick="addToCart();" >Add To Cart</a>
+                                <a href="#" class="cart__button">Quik View</a>
+                            </div>
+                        </div>
+                        <div class="cart__title">Cotton Polo Shirt</div>
+                        <div class="cart__price">
+                            <span>$100.00</span> $95.00
+                        </div>
+                    </div>
+                </div>
+                <!-- //col-md-3 -->
+            </div>
+            <!-- //row -->
+
+            <a href="#" class="button-outline">Brows All Items</a>
+
+        </div>
+    </div>
+
+
+    <!-- Adv block -->
+    <div class="adv-wrapper adv-wrapper--bg-1">
+        <div class="container adv-content-center">
+
+            <div class="adv__title">Get something you love</div>
+            <a href="#" class="adv__button"> Shop Now</a>
+
+        </div>
+    </div>
+
+    <!-- Fetured Products -->
+    <section id="fetured"></section>
+    <div class="section">
+        <div class="container">
+            <h2 class="title">Fetured Products</h2>
+            <div class="subtitle">EDITORS’ PICKS</div>
+            <!-- row -->
+            <div class="row">
+                <!-- col-md-3 -->
+                <div class="col-md-3">
+                    <div class="cart">
+                        <div class="cart__image">
+                            <img src="img/products/product-4.jpg" alt="">
+                            <div class="cart__hover">
+                                <a href="#" class="cart__button">Add To Cart</a>
+                                <a href="#" class="cart__button">Quik View</a>
+                            </div>
+                        </div>
+                        <div class="cart__title">Cotton Polo Shirt</div>
+                        <div class="cart__price">
+                            <!-- <span>$100.00</span> -->
+                            $95.00
+                        </div>
+                    </div>
+                </div>
+                <!-- //col-md-3 -->
+
+                <!-- col-md-3 -->
+                <div class="col-md-3">
+                    <div class="cart">
+                        <div class="cart__image">
+                            <img src="img/products/product-9.jpg" alt="">
+                            <div class="cart__hover">
+                                <a href="#" class="cart__button">Add To Cart</a>
+                                <a href="#" class="cart__button">Quik View</a>
+                            </div>
+                        </div>
+                        <div class="cart__title">Cotton Polo Shirt</div>
+                        <div class="cart__price">
+                            <!-- <span>$100.00</span> -->
+                            $199.00
+                        </div>
+                    </div>
+                </div>
+                <!-- //col-md-3 -->
+
+                <!-- col-md-3 -->
+                <div class="col-md-3">
+                    <div class="cart">
+                        <div class="cart__image">
+                            <img src="img/products/product-10.jpg" alt="">
+                            <div class="cart__hover">
+                                <a href="#" class="cart__button">Add To Cart</a>
+                                <a href="#" class="cart__button">Quik View</a>
+                            </div>
+                        </div>
+                        <div class="cart__title">Cotton Polo Shirt</div>
+                        <div class="cart__price">
+                            <!-- <span>$100.00</span> -->
+                            $55.00
+                        </div>
+                    </div>
+                </div>
+                <!-- //col-md-3 -->
+
+                <!-- col-md-3 -->
+                <div class="col-md-3">
+                    <div class="cart">
+                        <div class="cart__image hovered">
+                            <img src="img/products/product-8.jpg" alt="">
+                            <div class="cart__hover">
+                                <a href="#" class="cart__button">Add To Cart</a>
+                                <a href="#" class="cart__button">Quik View</a>
+                            </div>
+                        </div>
+                        <div class="cart__title">Cotton Polo Shirt</div>
+                        <div class="cart__price">
+                            <!-- <span>$100.00</span> -->
+                            $125.00
+                        </div>
+                    </div>
+                </div>
+                <!-- //col-md-3 -->
+            </div>
+            <!-- //row -->
+
+            <a href="#" class="button-outline">Brows All Items</a>
+
+        </div>
+    </div>
+
+
+    <div class="adv-wrapper adv-wrapper--bg-2">
+        <div class="container adv-content-center">
+            <img class="border-radius__default hovered__border" src="img/brands/brand-1.png" alt="Brand">
+            <img class="border-radius__default hovered__border" src="img/brands/brand-2.png" alt="Brand">
+            <img class="border-radius__default hovered__border" src="img/brands/brand-3.png" alt="Brand">
+            <img class="border-radius__default hovered__border" src="img/brands/brand-4.png" alt="Brand">
+            <img class="border-radius__default hovered__border" src="img/brands/brand-1.png" alt="Brand">
+            <img class="border-radius__default hovered__border" src="img/brands/brand-6.png" alt="Brand">
+
+        </div>
+    </div>
+
+    <!-- Blog -->
+    <section id="blog"></section>
+    <div class="container section">
+        <h2 class="title">Blog Posts</h2>
+        <div class="subtitle">EDITORS’ PICKS</div>
+
+        <div class="row">
+            <!-- Blog post -->
+        <div class="col-md-6 blog">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/blog/blog-1.jpg" alt="Blog post">
+                </div>
+                <div class="col-md-8">
+                    
+                    <div class="blog__title">Lorem Dolor Amet Consectetur</div>
+                    <div class="blog__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</div>
+                    <a href="" class="blog__reade-more">Read more <i class="arrow__right_icons fas fa-chevron-right"></i></a>    
+                    
+                </div>
+            </div>
+        </div>
+            <!-- // Blog post -->
+            <!-- Blog post -->
+        <div class="col-md-6 blog">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/blog/blog-2.jpg" alt="Blog post">
+                </div>
+                <div class="col-md-8">
+                    
+                    <div class="blog__title">Lorem Dolor Amet Consectetur</div>
+                    <div class="blog__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</div>
+                    <a href="" class="blog__reade-more">Read more <i class="arrow__right_icons fas fa-chevron-right"></i></a>    
+                    
+                </div>
+            </div>
+        </div>
+            <!-- // Blog post -->
+            <!-- Blog post -->
+            <div class="col-md-6 blog">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/blog/blog-3.jpg" alt="Blog post">
+                    </div>
+                    <div class="col-md-8">
+                        
+                        <div class="blog__title">Lorem Dolor Amet Consectetur</div>
+                        <div class="blog__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</div>
+                        <a href="" class="blog__reade-more">Read more <i class="arrow__right_icons fas fa-chevron-right"></i></a>    
+                        
+                    </div>
+                </div>
+            </div>
+                <!-- // Blog post -->
+            <!-- Blog post -->
+            <div class="col-md-6 blog">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/blog/blog-4.jpg" alt="Blog post">
+                    </div>
+                    <div class="col-md-8">
+                        
+                        <div class="blog__title">Lorem Dolor Amet Consectetur</div>
+                        <div class="blog__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</div>
+                        <a href="" class="blog__reade-more">Read more <i class="arrow__right_icons fas fa-chevron-right"></i></a>    
+                        
+                    </div>
+                </div>
+            </div>
+                <!-- // Blog post -->
+
+        </div>
+
+
+        <p><a name="sub"></a></p>
+        <a href="#" class="button-outline mt-60 mb-100">read All post</a>
+        <h2 class="title">Join 100,000 members already collaborating </h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                </div>
+            </div>
+        </div>
+
+        <form action="" class="subscribe">
+            <input type="text" class="subscribe__input" placeholder="Your email address" maxlength="35">
+            <input type="submit" class="subscribe__button" value="Subscribe">
+        </form>
+
+    </div>
+
+
+
+    <!-- Footer -->
+    <section id="sub"></section>
+    <footer class="footer">
+                <!-- Back To Top -->
+                <a id="scroll" href="#top" class="button__top-scroll">Top</a>
+        <div class="container">
+            <div class="footer-nav">
+                <a href="#" class="footer-nav__link">YOUR ACCOUNT</a>
+                <a href="#" class="footer-nav__link">CONTACT US</a>
+                <a href="#" class="footer-nav__link">TERMS OF SERVICE</a>
+            </div>
+            <div class="footer__social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+            <div class="footer__copiright">Copyright © 2016 KenaKata. All Rights Reserved. Designed by Shuvo</div>
+        </div>
+
+    </footer>
+        <!--========== END FOOTER ==========-->
+
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</body>
+ <!-- END BODY -->
+</html>

@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#head{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+}
+#head>span>span.log-p{
+    display: inline-block;
+    font-size: 48px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    margin-left: 55px;
+}
+#head>span>img{
+    display: inline-block;
+    margin: auto;
+    margin-top: 15px;
+}
+#head>span{
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#head>div.menu{
+    display: inline-block;
+    position: inherit;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#head>div.menu>img{
+    display: inline-block;
+}
+div#menuNav{
+    float: right;
+    display: none;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    transition: 1s;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+div#menuNav>ul{
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    max-height:300px;
+    overflow:hidden;
+}
+div#menuNav>ul>li{
+    width: 100;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: #fff;
+}
+div#menuNav>ul>li:hover{
+    background-color: #4177C4;
+    transition: 0.5s;
+}
+
+.header{
+    width: 100%;
+    height: 220px;
+    background-color: rgb(0,0,0,0.3);
+    display: inline-block;
+}
+.header>.container>img{
+    display: inline-block;
+    margin: auto;
+    margin-top: 25px;
+}
+.header>.container>span#button{
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    background-color: #4177C4;
+    margin: auto;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.header>.container>span#button:hover{
+    background-color: rgb(28, 56, 95);
+    transition: 0.2s;
+}
+.header>.container>#button>img{
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.header>.container>#button>span{
+    float: left;
+    display: inline-block;
+    font-weight: bold;
+    font-family: "Open Sans";
+    font-size: 18px;
+    margin-top: 12px;
+    margin-left: 10px;
+    color: #fff;
+}
+.header-p{
+    display: inline-block;
+    position: absolute;
+}
+.header-p>h1{
+    color: #fff;
+    font-size: 18px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    padding: 10px;
+}
+.header-p>p{
+    color: #fff;
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: lighter;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+}
+
+
+.content{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.c1,.c2,.c3{
+    width: 100%;
+    height: 190px;
+    background-color: #fff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+    display: inline-block;
+    text-align: left;
+}
+.c1>img{
+    margin-top: 25px;
+    margin-left: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.c2>img{
+    margin-top: 25px;
+    margin-left: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.c3>img{
+    margin-top: 25px;
+    margin-left: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.c1>h1{
+    color: #4177C4;
+    font-family: "Open Sans";
+    font-size: 24px;
+    float: right;
+    display: inline-block;
+    margin-left: 170px;
+    margin-top: 30px;
+    position: absolute;
+}
+.c2>h1{
+    color: #4177C4;
+    font-family: "Open Sans";
+    font-size: 24px;
+    float: right;
+    display: inline-block;
+    margin-left: 170px;
+    margin-top: 30px;
+    position: absolute;
+}
+.c3>h1{
+    color: #4177C4;
+    font-family: "Open Sans";
+    font-size: 24px;
+    float: right;
+    display: inline-block;
+    margin-left: 170px;
+    margin-top: 30px;
+    position: absolute;
+}
+.c1>p{
+    color: #909090;
+    display: inline-block;
+    position: absolute;
+    margin-top: 120px;
+    font-size: 16px;
+    margin-left: 170px
+}
+.c2>p{
+    color: #909090;
+    display: inline-block;
+    position: absolute;
+    margin-top: 120px;
+    font-size: 16px;
+    margin-left: 170px
+}
+.c3>p{
+    color: #909090;
+    display: inline-block;
+    position: absolute;
+    margin-top: 120px;
+    font-size: 16px;
+    margin-left: 170px
+}
